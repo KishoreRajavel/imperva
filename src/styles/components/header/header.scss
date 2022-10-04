@@ -1,0 +1,27 @@
+header {
+  padding: 0 1rem;
+  background-color: black;
+  color: white;
+  max-width: 100vw;
+  // min-width: 100vw;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .btn-area {
+    display: flex;
+    gap: 1rem;
+  }
+  .list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    .link {
+      text-decoration: none;
+      color: #fff;
+      &:hover {
+        color: #fcb900;
+      }
+    }
+  }
+}

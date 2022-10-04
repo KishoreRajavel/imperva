@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// <<=====Components=====>>
+@import "./components/header/header.scss";
+
+//<<=====Variables=====>>
+@import "./components/global/variables/variables.scss";
+
+//<<=====Button=====>>
+@import "./components/UI/Button/Button.scss";
