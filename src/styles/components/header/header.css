@@ -1,0 +1,89 @@
+header {
+  position: relative;
+  top: 0;
+  padding: 0 1rem;
+  background-color: black;
+  color: white;
+  max-width: 100vw;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .row {
+  display: flex;
+  justify-content: space-between;
+}
+header .arrow {
+  display: none;
+}
+header .btn-area {
+  display: flex;
+  gap: 1rem;
+}
+header .hided-list {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  header .hided-list {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header .btn-area {
+    display: none;
+  }
+}
+header .menu-bar-icon {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  header .menu-bar-icon {
+    display: block;
+    font-size: 1.5rem;
+  }
+  header .true {
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    height: 10rem;
+    left: 0;
+    max-width: 96vw;
+    min-width: 96vw;
+    background-color: #fff;
+    gap: 1rem;
+    padding: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  header .true .link {
+    color: #000;
+  }
+  header .true .link .title {
+    width: 5rem;
+  }
+  header .true .link .item {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  header .true .link .arrow {
+    display: block;
+  }
+  header .false {
+    display: none;
+  }
+}
+header ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+header ul .link {
+  text-decoration: none;
+  color: #fff;
+}
+header ul .link:hover {
+  color: #fcb900;
+}/*# sourceMappingURL=header.css.map */
