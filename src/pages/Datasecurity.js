@@ -1,8 +1,9 @@
 import React from "react";
-import Datasecurity from "../components/pages/DataSecurity/DataSecurity/Datasecurity";
+import Layout from "../components/layout/Layout";
+import "../styles/main.scss";
 
 const DataSecurity = () => {
-  return <Datasecurity />;
+  return <Layout>hh</Layout>;
 };
 
 export default DataSecurity;

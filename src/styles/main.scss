@@ -25,5 +25,10 @@ body {
 //<<=====Button=====>>
 @import "./components/UI/Button/Button.scss";
 
-//<<=====Pages=====>>
-@import "../styles/pages/Datasecurity/Datasecurity.scss";
+//<<=====UI=====>>
+@import "../styles/components/UI/UI/Hero.scss";
+@import "../styles/components/UI/UI/PostHero.scss";
+@import "../styles/components/UI/UI/FirstSection.scss";
+@import "../styles/components/UI/UI/SecondSection.scss";
+@import "../styles/components/UI/UI/Services.scss";
+@import "../styles/components/UI/UI/Overview.scss";

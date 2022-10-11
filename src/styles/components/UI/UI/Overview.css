@@ -1,0 +1,70 @@
+.ds {
+  color: #fff;
+  padding: 5rem 5rem 0 5rem;
+  margin-bottom: 1rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-image: url(https://www.imperva.com/products/wp-content/uploads/sites/11/2022/05/Data-Security-portfolio-BG.png);
+}
+.ds .link-area {
+  margin: 2rem 0;
+  padding: 2rem 0;
+  display: flex;
+  gap: 2rem;
+  font-weight: bold;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.ds .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.ds .content .left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.ds .content .left h3 {
+  font-size: 2rem;
+}
+.ds .content .left p {
+  font-size: 1.3rem;
+}
+.ds .content .left button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.ds .content .right {
+  max-width: 80vw;
+}
+.ds .content .right img {
+  width: 100%;
+  min-width: 20rem;
+}
+
+.quotes {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-image: url(https://www.imperva.com/products/wp-content/uploads/sites/11/2022/01/Financial-indusrty-BG.jpg);
+  padding: 5rem;
+  gap: 2rem;
+}
+.quotes blockquote {
+  width: 90%;
+  font-size: 2rem;
+}
+.quotes button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}/*# sourceMappingURL=Overview.css.map */

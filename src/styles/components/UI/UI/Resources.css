@@ -1,0 +1,48 @@
+.resources {
+  max-width: 100%;
+  padding: 2rem;
+}
+.resources h1 {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+.resources .row {
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  gap: 5rem;
+  overflow-x: scroll;
+}
+.resources .row .single-item {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 23rem;
+  height: 25rem;
+  border-radius: 20px;
+}
+.resources .row .single-item .img {
+  width: 23rem;
+}
+.resources .row .single-item .img img {
+  border-radius: 20px 20px 0 0;
+  width: 23rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.resources .row .single-item .content {
+  padding: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.resources .row .single-item .content .btn {
+  border: 1px solid black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+}
+.resources .row .single-item .content p {
+  font-size: 1.2rem;
+}/*# sourceMappingURL=Resources.css.map */
