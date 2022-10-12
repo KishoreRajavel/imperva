@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
-import Logo from "../../images/logo.svg";
+// import Logo from "../../images/logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsArrowRight } from "react-icons/bs";
+import Logo from "../../images/Digimeta_logo.png";
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -41,7 +42,9 @@ const Header = () => {
 
   return (
     <header className="header">
-      <img src={Logo} alt="logo" />
+      <div className="logo">
+        <img src={Logo} alt="logo" />
+      </div>
       <div className="menu-bar-icon" onClick={menuBarHandler}>
         <GiHamburgerMenu />
       </div>

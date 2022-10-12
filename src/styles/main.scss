@@ -4,6 +4,7 @@
   ::-webkit-scrollbar {
     display: none;
   }
+  box-sizing: border-box;
 }
 
 html,
@@ -36,3 +37,5 @@ body {
 @import "../styles/components/UI/UI/SecondSection.scss";
 @import "../styles/components/UI/UI/Services.scss";
 @import "../styles/components/UI/UI/Overview.scss";
+@import "../styles/components/UI/UI/Resources.scss";
+@import "../styles/components/UI/UI/PreFooter.scss";
