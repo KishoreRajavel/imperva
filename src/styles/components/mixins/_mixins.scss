@@ -6,8 +6,6 @@
             @content;
         }
     }
-}
-@mixin res($breakpoint){
     @if $breakpoint== tab-sm{
         @media only screen and (max-width: 576px) {
             @content;
