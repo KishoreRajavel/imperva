@@ -15,6 +15,10 @@ body {
   overflow-x: hidden;
 }
 
+// <<=====Mixins=======>>
+
+@import "./components/mixins/mixins";
+
 // <<=====Components=====>>
 @import "./components/header/header.scss";
 @import "./components/footer/footer.scss";
