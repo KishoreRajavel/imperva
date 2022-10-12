@@ -1,6 +1,5 @@
 import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import "../styles/main.scss";
 import Layout from "../components/layout/Layout";
 import HeroComponent from "../components/UI/Hero";
 import PostHero from "../components/UI/PostHero";
@@ -8,6 +7,9 @@ import FirstSection from "../components/UI/FirstSection";
 import SecondSection from "../components/UI/SecondSection";
 import Services from "../components/UI/Services";
 import Overview from "../components/UI/Overview";
+import Quotes from "../components/UI/Quotes";
+import Resources from "../components/UI/Resources";
+import PreFooter from "../components/UI/PreFooter";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -63,6 +65,39 @@ const IndexPage = () => {
           }
         }
       }
+      allContentfulSwithContent(
+        filter: { pageId: { eq: "application-security" } }
+      ) {
+        edges {
+          node {
+            description
+            mainHeading
+            image {
+              url
+            }
+            id
+          }
+        }
+      }
+      contentfulQuotes(pageId: { eq: "application-security" }) {
+        image {
+          url
+        }
+        description
+        name
+      }
+      allContentfulItemCard(
+        filter: { pageId: { eq: "application-security" } }
+      ) {
+        edges {
+          node {
+            mainHeading
+            image1 {
+              url
+            }
+          }
+        }
+      }
     }
   `);
 
@@ -78,6 +113,14 @@ const IndexPage = () => {
   const section1Img = data.contentfulSection1.image.url;
 
   const servicesList = data.allContentfulSection3.edges;
+
+  const OverviewList = data.allContentfulSwithContent.edges;
+
+  const quoteDescription = data.contentfulQuotes.description;
+  const quoteImage = data.contentfulQuotes.image.url;
+  const quoteName = data.contentfulQuotes.name;
+
+  const ResourcesList = data.allContentfulItemCard.edges;
 
   return (
     <Layout>
@@ -95,7 +138,10 @@ const IndexPage = () => {
         title={`Protect cloud-native applications at the speed of DevOps
 `}
       />
-      <Overview />
+      <Overview list={OverviewList} title={`Application Security`} />
+      <Quotes desc={quoteDescription} name={quoteName} />
+      <Resources list={ResourcesList} />
+      <PreFooter />
     </Layout>
   );
 };
