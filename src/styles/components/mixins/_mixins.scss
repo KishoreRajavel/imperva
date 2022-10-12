@@ -1,0 +1,51 @@
+// Responsiveness
+
+@mixin res($breakpoint){
+    @if $breakpoint== phone{
+        @media only screen and (max-width: 375px) {
+            @content;
+        }
+    }
+}
+@mixin res($breakpoint){
+    @if $breakpoint== tab-sm{
+        @media only screen and (max-width: 576px) {
+            @content;
+        }
+    }
+}
+@mixin res($breakpoint){
+    @if $breakpoint== tab{
+        @media only screen and (max-width: 834px) {
+            @content;
+        }
+    }
+}
+@mixin res($breakpoint){
+    @if $breakpoint== tab-lg{
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+    }
+}
+@mixin res($breakpoint){
+    @if $breakpoint== desk-sm{
+        @media only screen and (max-width: 1300px) {
+            @content;
+        }
+    }
+}
+@mixin res($breakpoint){
+    @if $breakpoint== desk{
+        @media only screen and (max-width: 1440px) {
+            @content;
+        }
+    }
+}
+@mixin res($breakpoint){
+    @if $breakpoint== desk-lg{
+        @media only screen and (max-width: 1441px) {
+            @content;
+        }
+    }
+}
