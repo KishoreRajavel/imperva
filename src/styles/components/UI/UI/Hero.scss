@@ -15,6 +15,9 @@
     position: relative;
     bottom: 30rem;
     left: 5rem;
+    @include res(tab-sm) {
+      bottom: 35rem;
+    }
     h1 {
       font-size: 3rem;
     }

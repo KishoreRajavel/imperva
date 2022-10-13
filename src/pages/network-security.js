@@ -50,6 +50,17 @@ const NetWorkSecurity = () => {
           url
         }
       }
+      contentfulSection2(pageId: { eq: "network-security" }) {
+        mainHeading
+        description
+        image {
+          url
+        }
+        list {
+          heading
+          description
+        }
+      }
       allContentfulSection3(filter: { pageId: { eq: "network-security" } }) {
         edges {
           node {
@@ -116,6 +127,11 @@ const NetWorkSecurity = () => {
 
   const ResourcesList = data.allContentfulItemCard.edges;
 
+  const secondSectionBg = data.contentfulSection2.image.url;
+  const secondSectionHeading = data.contentfulSection2.mainHeading;
+  const secondSectionDescription = data.contentfulSection2.description;
+  const secondSectionList = data.contentfulSection2.list;
+
   return (
     <Layout>
       {" "}
@@ -127,7 +143,12 @@ const NetWorkSecurity = () => {
         list={section1List}
         img={section1Img}
       />
-      <SecondSection />
+      <SecondSection
+        list={secondSectionList}
+        BG={secondSectionBg}
+        title={secondSectionHeading}
+        desc={secondSectionDescription}
+      />
       <Services
         list={servicesList}
         title={`Protect cloud-native applications at the speed of DevOps

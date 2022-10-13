@@ -48,6 +48,18 @@ const SecurityAutomation = () => {
           url
         }
       }
+      contentfulSection2(pageId: { eq: "security-automation" }) {
+        mainHeading
+        description
+        image {
+          url
+        }
+        list {
+          heading
+          description
+        }
+      }
+
       allContentfulSection3(filter: { pageId: { eq: "security-automation" } }) {
         edges {
           node {
@@ -113,6 +125,12 @@ const SecurityAutomation = () => {
   const quoteName = data.contentfulQuotes.name;
 
   const ResourcesList = data.allContentfulItemCard.edges;
+
+  const secondSectionBg = data.contentfulSection2.image.url;
+  const secondSectionHeading = data.contentfulSection2.mainHeading;
+  const secondSectionDescription = data.contentfulSection2.description;
+  const secondSectionList = data.contentfulSection2.list;
+
   return (
     <Layout>
       {" "}
@@ -124,7 +142,12 @@ const SecurityAutomation = () => {
         list={section1List}
         img={section1Img}
       />
-      <SecondSection />
+      <SecondSection
+        list={secondSectionList}
+        BG={secondSectionBg}
+        title={secondSectionHeading}
+        desc={secondSectionDescription}
+      />
       <Services
         list={servicesList}
         title={`Protect cloud-native security-automations at the speed of DevOps

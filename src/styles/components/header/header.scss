@@ -15,10 +15,7 @@ header {
     width: 8rem;
     height: 100%;
     margin-top: 2rem;
-    // display: flex;
-    // align-items: center;
-    // align-self: center;
-    // justify-content: center;
+
     img {
       width: 100%;
     }
@@ -66,10 +63,10 @@ header {
       flex-direction: column;
       position: absolute;
       top: 4rem;
-      height: 10rem;
+      height: fit-content;
       left: 0;
-      max-width: 96vw;
-      min-width: 96vw;
+      max-width: 100%;
+      min-width: 100%;
       background-color: #fff;
       gap: 1rem;
       padding: 1.5rem;

@@ -50,6 +50,17 @@ const CloudNativeSecurity = () => {
           url
         }
       }
+      contentfulSection2(pageId: { eq: "cloud-native-security" }) {
+        mainHeading
+        description
+        image {
+          url
+        }
+        list {
+          heading
+          description
+        }
+      }
       allContentfulSection3(
         filter: { pageId: { eq: "cloud-native-security" } }
       ) {
@@ -118,6 +129,11 @@ const CloudNativeSecurity = () => {
 
   const ResourcesList = data.allContentfulItemCard.edges;
 
+  const secondSectionBg = data.contentfulSection2.image.url;
+  const secondSectionHeading = data.contentfulSection2.mainHeading;
+  const secondSectionDescription = data.contentfulSection2.description;
+  const secondSectionList = data.contentfulSection2.list;
+
   return (
     <Layout>
       {" "}
@@ -129,7 +145,12 @@ const CloudNativeSecurity = () => {
         list={section1List}
         img={section1Img}
       />
-      <SecondSection />
+      <SecondSection
+        list={secondSectionList}
+        BG={secondSectionBg}
+        title={secondSectionHeading}
+        desc={secondSectionDescription}
+      />
       <Services
         list={servicesList}
         title={`Protect cloud-native at the speed of DevOps
