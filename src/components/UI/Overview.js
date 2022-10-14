@@ -15,8 +15,14 @@ const Overview = ({ list, title }) => {
       <h1>{title}</h1>
       <div className="link-area">
         {list.map((item, index) => (
-          <div className="cont">
-            <div className="head" onClick={() => ActiveHandler(item.node.id)}>
+          <div className="cont" key={index}>
+            <div
+              className="head"
+              onClick={() => ActiveHandler(item.node.id)}
+              onKeyDown={() => ActiveHandler(item.node.id)}
+              tabIndex={index}
+              role="presentation"
+            >
               <h2 key={index}>{item?.node?.mainHeading}</h2>
               <div className="arrow">
                 <AiOutlineDown />
