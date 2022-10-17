@@ -1,5 +1,5 @@
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
+import { FiArrowRight } from "react-icons/fi";
 
 const HomepageServices = ({ list }) => {
   console.log(list);
@@ -14,12 +14,12 @@ const HomepageServices = ({ list }) => {
             <div className="homePage-services-content-card-links">
               <p className="homePage-services-content-card-links-link_1">
                 <a>
-                  {item.link_1} <BsArrowRight />
+                  {item.link_1} <FiArrowRight />
                 </a>
               </p>
               <p className="homePage-services-content-card-links-link_2">
                 <a>
-                  {item.link_1} <BsArrowRight />
+                  {item.link_1} <FiArrowRight />
                 </a>
               </p>
             </div>
