@@ -11,11 +11,16 @@
         &-item{
             display: flex;
             text-align: center;
-            padding: 1rem;
+            padding: 1rem 2rem;
             &-text{
                 text-align: left;
                 h2{
                     margin-bottom: 1rem;
+                }
+                div{
+                    display: flex;
+                    align-items: center;
+                    vertical-align: middle;
                 }
             }
             &-image{

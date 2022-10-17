@@ -1,5 +1,5 @@
 import React from "react";
-import { FiArrowRight } from "react-icons/fi";
+import { AiOutlineArrowRight } from "react-icons/Ai";
 
 const HomePageHeroComp = ({ list }) => {
   return (
@@ -15,7 +15,7 @@ const HomePageHeroComp = ({ list }) => {
               <li>{item.desc_2}</li>
             </ul>
             <h2>
-              {item.link} <FiArrowRight />
+              {item.link} <AiOutlineArrowRight />
             </h2>
           </div>
         ))}
