@@ -6,6 +6,8 @@ import PreFooter from "../components/UI/PreFooter";
 import Hero from "../components/UI/Hero";
 import HomePagePostHero from "../components/UI/HomePagePostHero";
 import HomePageSection_1 from "../components/UI/HomePageSection_1";
+import HomePageHeroComp from "../components/UI/HomePageHeroComp";
+import HomePageCarousel from "../components/UI/HomePageCarousel";
 
 const Index = () => {
   const data = useStaticQuery(graphql`
@@ -58,6 +60,29 @@ const Index = () => {
           imgUrl
         }
       }
+      contentfulHomePageHeroComprehensive {
+        heading
+        content {
+          imgUrl
+          title
+          desc_1
+          desc_2
+          link
+        }
+      }
+      contentfulHomePageCarousel(
+        pageId: { eq: "home-page" }
+        itemId: { eq: "home-page-carousel" }
+      ) {
+        heading
+        content {
+          img_1Url
+          title
+          desc
+          link
+          img_2Url
+        }
+      }
     }
   `);
   const homePageServicesContent =
@@ -65,6 +90,8 @@ const Index = () => {
   const homePageHero = data.contentfulHero;
   const homePagePostHero = data.allContentfulPostHero.nodes;
   const homePageSection_1 = data.contentfulHomePageSection1;
+  const homePageHeroComp = data.contentfulHomePageHeroComprehensive;
+  const homePageCarouselData = data.contentfulHomePageCarousel;
   return (
     <Layout>
       <Hero
@@ -74,9 +101,10 @@ const Index = () => {
         image={homePageHero.image1.url}
       />
       <HomePagePostHero list={homePagePostHero} />
+      <HomePageHeroComp list={homePageHeroComp} />
       <HomepageServices list={homePageServicesContent} />
       <HomePageSection_1 list={homePageSection_1} />
-
+      <HomePageCarousel list={homePageCarouselData} />
       <PreFooter />
     </Layout>
   );

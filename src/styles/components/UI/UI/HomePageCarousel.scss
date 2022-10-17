@@ -1,0 +1,31 @@
+.HomePageCarousel{
+    width: 100vw;
+    padding: 5rem 2rem;
+    background-image: linear-gradient(to right top, #b800e9, #a600a9, #890073, #640047, #3d0b26, #2c0c1a, #1c070f, #000000, #000000, #000000, #000000, #000000);
+    h1{
+        font-size: 3rem;
+        color: white;
+    }
+    &-carousel{
+        margin: 1rem 0;
+        display: flex;
+        overflow-x: scroll;
+        &-item{
+            padding: 2rem;
+            border-radius: 1rem;
+            background-image: linear-gradient(to right, #ffffff, #ecfdff, #c4ffff, #acfff0, #c7ffb9);            min-width: 600px;
+            border: 1px solid black;
+            margin: 1rem 2rem;
+            display: flex;
+            img{
+                margin-bottom: 1rem;
+            }
+            h3{
+                margin-bottom: 1rem;
+            }
+            p{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
