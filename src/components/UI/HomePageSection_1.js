@@ -1,4 +1,5 @@
 import React from "react";
+import { HiOutlineArrowRight } from "react-icons/hi";
 
 const HomePageSection_1 = ({ list }) => {
   return (
@@ -7,13 +8,16 @@ const HomePageSection_1 = ({ list }) => {
         <div className="homePageSection_1-top-content">
           <h1>{list.heading}</h1>
           <p>{list.subHeading}</p>
+          <p>{list.link}</p>
           <img src={list.buttonLink} alt="img" />
         </div>
       </div>
       <div className="homePageSection_1-bottom">
         <div className="homePageSection_1-bottom-content">
           <h1>{list.heading2}</h1>
-          <p>{list.link}</p>
+          <button className="btn-yellow">
+            See all Customers <HiOutlineArrowRight />
+          </button>
           <div className="homePageSection_1-bottom-content-dflex">
             {list.content.map((item) => (
               <div className="homePageSection_1-bottom-content-dflex-image">
