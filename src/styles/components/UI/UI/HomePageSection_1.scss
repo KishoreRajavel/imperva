@@ -1,0 +1,42 @@
+.homePageSection_1{
+    width: 100%;
+    background-image: url("https://www.imperva.com/wp-content/uploads/2022/01/discovery.jpg");
+    background-size: cover;
+    &-top{
+        &-content{
+            width: 60%;
+            padding: 3rem 2rem;
+            h1{
+                margin-bottom: 3rem;
+                font-size: 3rem;
+            }
+            p{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    &-bottom{
+        padding: 3rem 2rem;
+        &-content{
+            h1{
+                margin-bottom: 1.5rem;
+                text-align: center;
+                font-size: 2.5rem;
+            }
+            p{
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+            &-dflex{
+                width: 80%;
+                margin: auto;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                &-image{
+                    margin: 1rem 2rem;
+                }
+            }
+        }
+    }
+}

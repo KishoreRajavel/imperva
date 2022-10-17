@@ -1,0 +1,25 @@
+.homePage-postHero{
+    width: 95%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 1rem;
+    border: 1px solid black;
+    &-content{
+        display: flex;
+        justify-content: space-between;
+        &-item{
+            display: flex;
+            text-align: center;
+            padding: 1rem;
+            &-text{
+                text-align: left;
+                h2{
+                    margin-bottom: 1rem;
+                }
+            }
+            &-image{
+                width: 100%;
+            }
+        }
+    }
+}
