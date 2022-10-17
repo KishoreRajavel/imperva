@@ -1,14 +1,21 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
-const HeroComponent = ({ title, desc, BG }) => {
+const HeroComponent = ({ title, desc, BG, image }) => {
   return (
     <div className="hero">
       <img src={BG} alt="bg" />
       <div className="content">
-        <h1>{title}</h1>
-        <p>{desc}</p>
-        <button className="btn-yellow">Get more info</button>
+        <div className="content-text">
+          <h1>{title}</h1>
+          <p>{desc}</p>
+          <button className="btn-yellow">Register Now</button>
+        </div>
+        {image && (
+          <div className="content-image">
+            <img src={image} />
+          </div>
+        )}
       </div>
     </div>
   );
