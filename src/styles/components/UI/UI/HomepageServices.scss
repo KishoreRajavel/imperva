@@ -43,6 +43,7 @@
       }
       p {
         margin-bottom: 2rem;
+<<<<<<< HEAD
       }
       &-links {
         align-items: center;
@@ -52,6 +53,43 @@
             font-size: 1rem;
             svg {
               color: rgb(255, 217, 0);
+=======
+    }
+    &-content{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        &-card{
+            margin: 0 1.5rem;
+            padding: 2rem;
+            color: white;
+            width: 400px;
+            border: 1px solid green;
+            border-radius: 1rem;
+            background-image: url("https://www.imperva.com/wp-content/uploads/2021/12/pillar-bg-1.svg");
+            background-color: black;
+            h2{
+                margin-bottom: 1rem;
+                font-size: 2.3rem;
+            }
+            p{
+                margin-bottom: 2rem;
+            }
+            &-links{
+                p{
+                    line-height: 15px;
+                    margin-bottom: 1rem;
+                    a{
+                        font-size: 1rem;
+                        padding: 0.5rem;
+                        svg{
+                            padding-top: 0.25rem;
+                            color: rgb(255, 217, 0);
+                        }
+                    }
+                }
+>>>>>>> 661bb2239073b60b8bde877cb5b173589d918a7b
             }
           }
         }

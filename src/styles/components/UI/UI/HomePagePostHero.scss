@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .homePage-postHero {
   margin: auto;
   max-width: 90vw;
@@ -11,6 +12,37 @@
       &-item {
         min-width: 100%;
       }
+=======
+.homePage-postHero{
+    margin: auto;
+    background-color: black;
+    &-content{
+        width: 95%;
+        border-radius: 1rem;    
+        margin: auto;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        &-item{
+            display: flex;
+            text-align: center;
+            padding: 1rem 2rem;
+            &-text{
+                text-align: left;
+                h2{
+                    margin-bottom: 1rem;
+                }
+                div{
+                    display: flex;
+                    align-items: center;
+                    vertical-align: middle;
+                }
+            }
+            &-image{
+                width: 100%;
+            }
+        }
+>>>>>>> 661bb2239073b60b8bde877cb5b173589d918a7b
     }
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 30%;
