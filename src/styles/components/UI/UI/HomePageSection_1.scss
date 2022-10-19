@@ -18,10 +18,13 @@
     &-bottom{
         padding: 3rem 2rem;
         &-content{
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             button{
+                width: 300px;
                 margin: 1rem 0;
-                display: flex;
             }
             h1{
                 margin-bottom: 1.5rem;
