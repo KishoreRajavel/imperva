@@ -25,43 +25,12 @@
       }
       h2 {
         color: white;
-<<<<<<< HEAD
         margin-bottom: 1.5rem;
       }
       ul {
         li {
           color: gray;
           margin-bottom: 1rem;
-=======
-        padding: 3rem 0;
-        text-align: center;
-    }
-    &-content{
-        padding: 2rem;
-        display: flex;
-        justify-content: start;
-        flex-wrap: wrap;
-        &-card{
-            width: 400px;
-            padding: 1rem;
-            margin: 1rem 2rem;
-            background: transparent;
-            img{
-                margin-bottom: 1.5rem;
-            }
-            h2{
-                color: white;
-                margin-bottom: 1.5rem;
-                display: flex;
-                line-height: 20px;
-            }
-            ul{
-                li{
-                    color: gray;
-                    margin-bottom: 1rem;
-                }
-            }
->>>>>>> 661bb2239073b60b8bde877cb5b173589d918a7b
         }
       }
     }
