@@ -19,8 +19,11 @@ const HomePageSection_1 = ({ list }) => {
             See all Customers <HiOutlineArrowRight />
           </button>
           <div className="homePageSection_1-bottom-content-dflex">
-            {list.content.map((item) => (
-              <div className="homePageSection_1-bottom-content-dflex-image">
+            {list.content.map((item, index) => (
+              <div
+                key={index}
+                className="homePageSection_1-bottom-content-dflex-image"
+              >
                 <img src={item.imgUrl} alt="img" />
               </div>
             ))}

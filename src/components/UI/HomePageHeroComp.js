@@ -6,9 +6,9 @@ const HomePageHeroComp = ({ list }) => {
     <div className="HomePageHeroComp">
       <h1>Comprehensive Digital Security</h1>
       <div className="HomePageHeroComp-content">
-        {list.content.map((item) => (
-          <div className="HomePageHeroComp-content-card">
-            <img src={item.imgUrl} alt="" />
+        {list.content.map((item, index) => (
+          <div key={index} className="HomePageHeroComp-content-card">
+            <img src={item.imgUrl} alt="img" />
             <h2>{item.title}</h2>
             <ul>
               <li>{item.desc_1}</li>
@@ -19,62 +19,6 @@ const HomePageHeroComp = ({ list }) => {
             </h2>
           </div>
         ))}
-        {/* <div className="HomePageHeroComp-content-card">
-          <img
-            src="https://www.imperva.com/wp-content/uploads/2022/10/Application-Security_LI.svg"
-            alt=""
-          />
-          <h2>Appls security</h2>
-          <ul>
-            <li>Automatically protect applications and APIs anywhere</li>
-            <li>
-              Protect applications from DDoS, bot, and supply chain attacks
-            </li>
-          </ul>
-          <h2>Read more</h2>
-        </div>
-        <div className="HomePageHeroComp-content-card">
-          <img
-            src="https://www.imperva.com/wp-content/uploads/2022/10/Application-Security_LI.svg"
-            alt=""
-          />
-          <h2>Appls security</h2>
-          <ul>
-            <li>Automatically protect applications and APIs anywhere</li>
-            <li>
-              Protect applications from DDoS, bot, and supply chain attacks
-            </li>
-          </ul>
-          <h2>Read more</h2>
-        </div>
-        <div className="HomePageHeroComp-content-card">
-          <img
-            src="https://www.imperva.com/wp-content/uploads/2022/10/Application-Security_LI.svg"
-            alt=""
-          />
-          <h2>Appls security</h2>
-          <ul>
-            <li>Automatically protect applications and APIs anywhere</li>
-            <li>
-              Protect applications from DDoS, bot, and supply chain attacks
-            </li>
-          </ul>
-          <h2>Read more</h2>
-        </div>
-        <div className="HomePageHeroComp-content-card">
-          <img
-            src="https://www.imperva.com/wp-content/uploads/2022/10/Application-Security_LI.svg"
-            alt=""
-          />
-          <h2>Appls security</h2>
-          <ul>
-            <li>Automatically protect applications and APIs anywhere</li>
-            <li>
-              Protect applications from DDoS, bot, and supply chain attacks
-            </li>
-          </ul>
-          <h2>Read more</h2>
-        </div> */}
       </div>
     </div>
   );

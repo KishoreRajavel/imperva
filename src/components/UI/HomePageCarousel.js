@@ -6,8 +6,8 @@ const HomePageCarousel = ({ list }) => {
     <div className="HomePageCarousel">
       <h1>Recognized Leadership</h1>
       <div className="HomePageCarousel-carousel">
-        {list.content.map((item) => (
-          <div className="HomePageCarousel-carousel-item">
+        {list.content.map((item, index) => (
+          <div key={index} className="HomePageCarousel-carousel-item">
             <div className="HomePageCarousel-carousel-item-text">
               <img src={item.img_1Url} />
               <h3>{item.title}</h3>

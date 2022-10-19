@@ -5,8 +5,8 @@ const HomePagePostHero = ({ list }) => {
   return (
     <div className="homePage-postHero">
       <div className="homePage-postHero-content">
-        {list.map((item) => (
-          <div className="homePage-postHero-content-item">
+        {list.map((item, index) => (
+          <div key={index} className="homePage-postHero-content-item">
             <div className="homePage-postHero-content-item-text">
               <h2>{item.mainHeading}</h2>
               <div>
