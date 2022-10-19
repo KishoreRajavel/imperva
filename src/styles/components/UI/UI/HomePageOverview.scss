@@ -1,0 +1,118 @@
+.home-overview {
+  padding: 2rem;
+  //   margin-bottom: 1rem;
+  height: fit-content;
+  background-color: #d8e1fb;
+
+  .link-area {
+    margin: 2rem 0;
+    padding: 2rem 0;
+    display: flex;
+    gap: 2rem;
+    // font-weight: bold;
+    // border-top: 1px solid #fff;
+    // border-bottom: 1px solid #fff;
+    h2 {
+      &:hover {
+        color: #fcb900;
+        cursor: pointer;
+      }
+    }
+    .arrow {
+      display: none;
+    }
+    .inner-content {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1300px) {
+    .content {
+      width: 100%;
+      gap: 2rem;
+      display: flex;
+    }
+  }
+  .content {
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    // justify-content: space-between;
+    // padding: 3rem 0;
+    gap: 0.5rem;
+    .single-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      .link {
+        font-weight: bold;
+      }
+      img {
+        max-width: 95%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-overview {
+    padding: 1rem;
+
+    .link-area {
+      flex-direction: column;
+      border: 0;
+      //   background-color: #fff;
+      .cont {
+        padding: 2rem;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: #fff;
+        .inner-content {
+          border-top: 1px solid #fff;
+          padding-top: 2rem;
+          display: flex;
+          margin-top: 2rem;
+          flex-direction: column;
+          width: 100%;
+          gap: 2rem;
+          img {
+            max-width: 40%;
+            object-fit: contain;
+          }
+          .item {
+            display: flex;
+            gap: 1rem;
+            height: 100%;
+            .content {
+              height: 100%;
+              display: flex;
+              justify-content: flex-start;
+              flex-direction: column;
+              gap: 2rem;
+              p {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+        .head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 95%;
+          .arrow {
+            display: block;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    .content {
+      display: none;
+    }
+  }
+}
