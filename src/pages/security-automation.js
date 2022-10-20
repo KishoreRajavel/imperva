@@ -132,8 +132,7 @@ const SecurityAutomation = () => {
   const secondSectionList = data.contentfulSection2.list;
 
   return (
-    <Layout>
-      {" "}
+    <Layout>  
       <HeroComponent BG={Bg} title={mainHeading} desc={desc} />
       <PostHero list={postHeroList} />
       <FirstSection

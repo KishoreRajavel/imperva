@@ -20,7 +20,7 @@ const HomePageSection_1 = ({ list }) => {
         <div className="homePageSection_1-bottom-content">
           <h1>{list.heading2}</h1>
           <button className="btn-yellow">
-            See all Customers <HiOutlineArrowRight />
+            See all Customers &nbsp;<HiOutlineArrowRight />
           </button>
           <div className="homePageSection_1-bottom-content-dflex">
             {list.content.map((item, index) => (

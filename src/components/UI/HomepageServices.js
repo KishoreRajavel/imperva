@@ -14,12 +14,12 @@ const HomepageServices = ({ list }) => {
             <div className="homePage-services-content-card-links">
               <p className="homePage-services-content-card-links-link_1">
                 <a>
-                  {item.link_1} <AiOutlineArrowRight />
+                  {item.link_1}&nbsp; <AiOutlineArrowRight />
                 </a>
               </p>
               <p className="homePage-services-content-card-links-link_2">
                 <a>
-                  {item.link_1} <AiOutlineArrowRight />
+                  {item.link_1}&nbsp; <AiOutlineArrowRight />
                 </a>
               </p>
             </div>

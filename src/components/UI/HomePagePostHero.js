@@ -10,7 +10,7 @@ const HomePagePostHero = ({ list }) => {
             <div className="homePage-postHero-content-item-text">
               <h2>{item.mainHeading}</h2>
               <div>
-                {item.description} <HiArrowRight />
+                {item.description} &nbsp;<HiArrowRight />
               </div>
             </div>
             <div className="homePage-postHero-content-item-image">

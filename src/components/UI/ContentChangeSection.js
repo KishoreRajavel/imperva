@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineDown } from "react-icons/ai";
+import { AiOutlineArrowRight } from "react-icons/Ai";
 
 const ContentChangeSection = ({ list, title }) => {
   const [activeItem, setActiveItem] = useState(list[0]);
@@ -58,7 +59,7 @@ const ContentChangeSection = ({ list, title }) => {
             </div>
             <h3>{item.mainHeading}</h3>
             <p>{item.description}</p>
-            <div className="link">Learn more</div>
+            <div className="link" style={{display: "flex"}}>Learn more &nbsp; <AiOutlineArrowRight/></div>
           </div>
         ))}
       </div>

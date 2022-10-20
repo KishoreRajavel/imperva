@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/layout/Layout";
-import "../styles/main.scss";
 import { graphql, useStaticQuery } from "gatsby";
 import HeroComponent from "../components/UI/Hero";
 import PostHero from "../components/UI/PostHero";

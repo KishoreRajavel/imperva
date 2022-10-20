@@ -10,7 +10,6 @@ import Overview from "../components/UI/Overview";
 import Quotes from "../components/UI/Quotes";
 import Resources from "../components/UI/Resources";
 import PreFooter from "../components/UI/PreFooter";
-import "../styles/main.scss";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`

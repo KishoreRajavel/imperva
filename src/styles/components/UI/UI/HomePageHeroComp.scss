@@ -15,9 +15,9 @@
     justify-content: start;
     flex-wrap: wrap;
     &-card {
-      width: 400px;
+      width: 350px;
       padding: 1rem;
-      margin: 1rem 2rem;
+      margin: 1rem 1.5rem;
       background: transparent;
       img {
         margin-bottom: 1.5rem;
@@ -29,10 +29,16 @@
         line-height: 25px;
       }
       ul {
+        margin-left: -1.5rem;
         li {
           color: gray;
           margin-bottom: 1rem;
         }
+      }
+      h3{
+        display: flex;
+        line-height: 20px;
+        color: white;
       }
     }
   }

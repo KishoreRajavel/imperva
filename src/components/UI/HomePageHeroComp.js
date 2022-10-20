@@ -19,9 +19,9 @@ const HomePageHeroComp = ({ list }) => {
               <li>{item.desc_1}</li>
               <li>{item.desc_2}</li>
             </ul>
-            <h2>
-              {item.link} <AiOutlineArrowRight />
-            </h2>
+            <h3>
+              {item.link} &nbsp;<AiOutlineArrowRight />
+            </h3>
           </div>
         ))}
       </div>
