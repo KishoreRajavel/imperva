@@ -1,9 +1,14 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/Ai";
+import { BiGame } from "react-icons/bi";
+import img from "../../images/homepage-comp-bg.jpg";
 
 const HomePageHeroComp = ({ list }) => {
   return (
-    <div className="HomePageHeroComp">
+    <div
+      className="HomePageHeroComp"
+      style={{ backgroundImage: `url(${img})` }}
+    >
       <h1>Comprehensive Digital Security</h1>
       <div className="HomePageHeroComp-content">
         {list.content.map((item, index) => (

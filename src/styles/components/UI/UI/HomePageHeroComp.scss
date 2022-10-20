@@ -1,9 +1,8 @@
+
+
 .HomePageHeroComp {
   width: 100%;
-  scroll-behavior: smooth;
-  height: fit-content;
-  background-image: url("https://www.imperva.com/wp-content/uploads/2022/10/Products-bg.svg");
-  // background-size: cover;
+  background-size: cover;
   h1 {
     color: white;
     padding: 1rem 0;
@@ -24,8 +23,10 @@
         margin-bottom: 1.5rem;
       }
       h2 {
+        display: flex;
         color: white;
         margin-bottom: 1.5rem;
+        line-height: 25px;
       }
       ul {
         li {

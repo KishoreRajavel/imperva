@@ -136,7 +136,6 @@ const CloudNativeSecurity = () => {
 
   return (
     <Layout>
-      {" "}
       <HeroComponent BG={Bg} title={mainHeading} desc={desc} />
       <PostHero list={postHeroList} />
       <FirstSection

@@ -1,9 +1,13 @@
 import React from "react";
 import { HiOutlineArrowRight } from "react-icons/hi";
+import img from "../../images/homepage-section-1-bg.jpg";
 
 const HomePageSection_1 = ({ list }) => {
   return (
-    <div className="homePageSection_1">
+    <div
+      className="homePageSection_1"
+      style={{ backgroundImage: `url(${img})` }}
+    >
       <div className="homePageSection_1-top">
         <div className="homePageSection_1-top-content">
           <h1>{list.heading}</h1>
