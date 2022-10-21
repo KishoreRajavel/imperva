@@ -1,7 +1,7 @@
 // <<=====Post-hero=====>>
 .post-hero {
   background-color: #fff;
-  width: 80vw;
+  width: 95vw;
   min-height: 8rem;
   margin: auto;
   position: relative;
@@ -28,15 +28,22 @@
     width: 30%;
     @include res(tab) {
       width: 100%;
-    }
-    h3 {
-      color: #3a6dfc;
-    }
+    } 
     .post-hero-image {
       min-width: 6rem;
       max-width: 6rem;
       img {
         max-width: 100%;
+      }
+    }
+    .post-hero-content{
+      h3{
+        color: rgb(34, 105, 212);
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+      }
+      p{
+        font-size: 0.8rem;
       }
     }
   }

@@ -30,10 +30,10 @@
       position: relative;
       bottom: 1rem;
       background-color: #fff;
-      max-height: 70%;
+      max-height: 800px;
       min-width: 80%;
       max-width: 90vw;
-      margin-top: 1.5rem;
+      margin-top: 4rem;
       z-index: 10;
     }
 
@@ -73,7 +73,8 @@
 
     img {
       border-radius: 1rem;
-      min-height: 100%;
+      // min-height: 100%;
+      min-height: 900px;
       width: 100%;
 
       object-fit: cover;

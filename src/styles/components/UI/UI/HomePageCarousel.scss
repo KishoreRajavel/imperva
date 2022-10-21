@@ -10,12 +10,12 @@
         margin: 1rem 0;
         display: flex;
         overflow-x: scroll;
+        transform: translateZ(-50%);
         &-item{
             padding: 2rem;
             border-radius: 1rem;
             background-image: linear-gradient(to right, #ffffff, #ecfdff, #c4ffff, #acfff0, #c7ffb9);            min-width: 600px;
-            border: 1px solid black;
-            margin: 1rem 2rem;
+            margin: 1rem 1rem;
             display: flex;
             img{
                 margin-bottom: 1rem;
@@ -26,6 +26,43 @@
             }
             p{
                 margin-bottom: 1rem;
+            }
+            &-text{
+                &-link{
+                    display: flex;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+    &-bottom{
+        display: flex;
+        align-items: center;
+        &-buttons{
+            display: flex;
+            margin-left: 2rem;
+            div{
+                font-size: 2rem;
+                color: white;
+            }
+            &-right{
+                margin-left: 1rem;
+                :hover{
+                    color: gray;
+                }
+            }
+            &-left{
+                :hover{
+                    color: gray;
+                }
+            }
+        }
+        &-progress{
+            margin-left: 1rem;
+            width: 100%;
+            transition: 0.2s;
+            progress{
+                width: 100%;
             }
         }
     }

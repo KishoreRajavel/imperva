@@ -1,5 +1,6 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { BsArrowRight } from "react-icons/bs";
 
 const HeroComponent = ({ title, desc, BG, image }) => {
   return (
@@ -9,7 +10,7 @@ const HeroComponent = ({ title, desc, BG, image }) => {
         <div className="content-text">
           <h1>{title}</h1>
           <p>{desc}</p>
-          <button className="btn-yellow">Register Now</button>
+          <button>Register Now&nbsp;<BsArrowRight/></button>
         </div>
         {image && (
           <div className="content-image">

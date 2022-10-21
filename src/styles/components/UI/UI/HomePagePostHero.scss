@@ -1,12 +1,13 @@
 .homePage-postHero {
-  margin: auto;
-  max-width: 90vw;
-  // background-image: "../../../../images/homepage-comp-bg.jpg";
-  position: relative;
-  bottom: 5rem;
+  background-color: rgb(1, 0, 10);
 
   // background-color: black;
   &-content {
+    margin: auto;
+    width: 95vw;
+  // background-image: "../../../../images/homepage-comp-bg.jpg";
+  position: relative;
+  bottom: 5rem;
     @media only screen and (max-width: 700px) {
       flex-direction: column;
       &-item {
@@ -14,8 +15,6 @@
       }
     }
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width: 30%;
-    min-width: fit-content;
     border-radius: 1rem;
     margin: auto;
     background-color: #fff;
@@ -33,10 +32,13 @@
         text-align: left;
         h2 {
           margin-bottom: 1rem;
+          font-size: 1.2rem;
         }
         div{
           display: flex;
-          line-height: 1rem;
+          font-weight: 800;
+          line-height: 15px;
+          color: rgb(77, 77, 244);
         }
       }
       &-image {
@@ -45,8 +47,9 @@
           display: none;
         }
         img {
-          width: 100%;
-          object-fit: contain;
+          // width: 100%;
+          // object-fit: contain;
+          width: 80px;
         }
       }
     }

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+    import React, { useState } from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
-// import Logo from "../../images/logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsArrowRight } from "react-icons/bs";
 import Logo from "../../images/Digimeta_logo.png";

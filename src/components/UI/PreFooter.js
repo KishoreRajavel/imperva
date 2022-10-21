@@ -1,4 +1,5 @@
 import React from "react";
+import { BsArrowRight } from "react-icons/bs";
 import img from "../../images/imperva-security.png.webp";
 
 const PreFooter = () => {
@@ -7,7 +8,7 @@ const PreFooter = () => {
       <div className="left">
         <h1>See how we can help you secure your web applications and data</h1>
         <div className="btn-area">
-          <button className="btn-yellow"> Free Trial</button>
+          <button className="btn-yellow"> Free Trial&nbsp;<BsArrowRight/></button>
           <button className="btn-black">Schedule Demo</button>
         </div>
       </div>
